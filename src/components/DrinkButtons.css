@@ -1,3 +1,9 @@
+:root {
+  --gold: hsl(37, 52%, 53%);
+  --salmon: hsl(37, 52%, 83%);
+  --dark-gray: hsl(0, 0%, 20%);
+}
+
 .button-group {
   display: flex;
   flex-direction: row;
@@ -5,12 +11,12 @@
 }
 
 .button {
-  background-color: hsl(37, 52%, 53%);
+  background-color: var(--gold);
   border-radius: 10px;
   border: none;
 }
 
 .button:hover {
-  background-color: hsl(37, 52%, 83%);
-  color: #333333;
+  background-color: var(--salmon);
+  color: var(--dark-gray);
 }
