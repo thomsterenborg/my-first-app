@@ -1,0 +1,16 @@
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.button {
+  background-color: hsl(37, 52%, 53%);
+  border-radius: 10px;
+  border: none;
+}
+
+.button:hover {
+  background-color: hsl(37, 52%, 83%);
+  color: #333333;
+}
