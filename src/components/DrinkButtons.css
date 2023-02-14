@@ -11,7 +11,12 @@
 }
 
 .button {
+  margin-top: 1rem;
+  padding: 1rem;
   background-color: var(--gold);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
   border-radius: 10px;
   border: none;
 }
