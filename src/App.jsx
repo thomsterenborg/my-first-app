@@ -2,10 +2,11 @@ import "./App.css";
 import { DrinkButtons } from "./components/DrinkButtons";
 import { DrinkChoice } from "./components/DrinkChoice";
 import { coffee, tea } from "./utils/data";
+import { useState } from "react";
 
 export const App = () => {
   const greeting = "Hello, welcome to Winc Café";
-  const userDrink = undefined;
+  const [userDrink, setUserDrink] = useState(coffee);
 
   return (
     <div className="app">
