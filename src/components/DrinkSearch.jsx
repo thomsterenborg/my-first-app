@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { DrinkItems } from "./DrinkItems";
 import { TextInput } from "./ui/TextInput";
+import { availableDrinks } from "../utils/data.js";
 
 export const DrinkSearch = () => {
   const [searchField, setSearchField] = useState("test drink");
@@ -8,7 +10,7 @@ export const DrinkSearch = () => {
     <>
       <label>Search for drink:</label>
       <TextInput />
-      <p>{searchField}</p>
+      <DrinkItems drinks={availableDrinks} />
     </>
   );
 };
