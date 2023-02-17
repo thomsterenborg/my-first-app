@@ -1,9 +1,12 @@
-export const DrinkChoice = ({ drink }) => {
+import { Button } from "./ui/Button";
+
+export const DrinkChoice = ({ drink, onClick }) => {
   return (
     <>
-      <h2>Your choice is {drink.name}.</h2>
-      <img src={drink.imgUrl} height={100} width={100} alt={drink.alt}></img>
-      <p>Your drink will be ready in just a moment</p>
+      <h2>Your choice: {drink.name}</h2>
+      <img src={drink.imgUrl} width={100} height={100} alt={drink.alt} />
+      <p>Your drink will be ready in a few minutes</p>
+      <Button text={"Change selection"} onClick={() => onClick()} />
     </>
   );
 };
