@@ -1,14 +1,21 @@
-import { SimpleGrid } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { DrinkItem } from "./DrinkItem";
 
 export const DrinkItems = ({ drinks, onClick }) => {
   return (
     <>
-      <SimpleGrid columns={2} spacing={10}>
+      <Flex
+        gap={16}
+        w={["full", "75%"]}
+        flexWrap="wrap"
+        flexDir={["column", "row"]}
+        justify="center"
+        alignItems="center"
+      >
         {drinks.map((drink) => (
           <DrinkItem key={drink.id} drink={drink} onClick={onClick} />
         ))}
-      </SimpleGrid>
+      </Flex>
     </>
   );
 };

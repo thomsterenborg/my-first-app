@@ -35,7 +35,11 @@ export const DrinkChoice = ({ drink, onClick }) => {
         <Button mr={4} onClick={onOpen} text={"Confirm your order"} />
         <Button onClick={() => onClick()} text={"Change selection"} />
       </Flex>
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal
+        size={{ base: "full", md: "md" }}
+        isOpen={isOpen}
+        onClose={onClose}
+      >
         <ModalOverlay bg="blackAlpha.700" backdropFilter="blur(10px)" />
         <ModalContent>
           <ModalHeader>Confirm your choice</ModalHeader>
