@@ -1,2 +1,3 @@
 # This is my very first React app. 
-It's an exercise for Winc Academy. Got a boilerplate from the Academy but alomst all from the actual code is mine!
+It's an exercise for Winc Academy. Got a boilerplate from the Academy but alomst all from the actual code is mine.
+This was my very first time working with React. 
